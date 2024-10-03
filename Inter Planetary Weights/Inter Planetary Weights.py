@@ -13,17 +13,17 @@ PLUTO_SURFACE_GRAVITY_FACTOR = 0.066
 
 sName = input("Hello! What is your name?: ") #Get user's name as string.
 
-userWeight = float(input("How much do you weigh?: ")) #Get user's weight and convert to float.
+nWeight = float(input("How much do you weigh?: ")) #Get user's weight and convert to float.
 
 print  (f"\n{sName}, here is your weight if you were on a different planet:")
 
 #Convert, format, and output user's weights on different planets.
-print  (f"Weight on Mercury:    {userWeight * MERCURY_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Venus:      {userWeight * VENUS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on our Moon:   {userWeight * MOON_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Mars:       {userWeight * MARS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Jupiter:    {userWeight * JUPITER_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Saturn:     {userWeight * SATURN_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Uranus:     {userWeight * URANUS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Neptune:    {userWeight * NEPTUNE_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
-        f"Weight on Pluto:      {userWeight * PLUTO_SURFACE_GRAVITY_FACTOR:>10.2f}\n")
+print  (f"Weight on Mercury:    {nWeight * MERCURY_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Venus:      {nWeight * VENUS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on our Moon:   {nWeight * MOON_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Mars:       {nWeight * MARS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Jupiter:    {nWeight * JUPITER_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Saturn:     {nWeight * SATURN_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Uranus:     {nWeight * URANUS_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Neptune:    {nWeight * NEPTUNE_SURFACE_GRAVITY_FACTOR:>10.2f}\n"
+        f"Weight on Pluto:      {nWeight * PLUTO_SURFACE_GRAVITY_FACTOR:>10.2f}\n")
