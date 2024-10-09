@@ -8,15 +8,11 @@ sTempType = input("Is the temp F for Fahrenheit or C for Celsius? ").upper()  # 
 
 if sTempType == "F" or sTempType == "C":  # Continue if temp type was valid
 
-    # Use shortcut if statements for fun and to limit number of lines of repetitive code
-    nTempLimit = 212 if sTempType == "F" else 100
-    sConvertType = "Celsius" if sTempType == "F" else "Fahrenheit"
-    nConvertedTemp = (5.0 / 9) * (nTemperature - 32) if sTempType == "F" else ((9.0 / 5.0) * nTemperature) + 32
-
-    if nTemperature > nTempLimit:  # Compare user's temp to max temp
-        print(f"Temp can not be > {nTempLimit}.")
+    if nTemperature > (212 if sTempType == "F" else 100):  # Compare user's temp to max temp and continue to conversion if under
+        print(f"Temp can not be > {212 if sTempType == "F" else 100}.")
     else:
-        print(f"The {sConvertType} equivalent is: {nConvertedTemp:.1f}")
+        print(f"The {"Celsius" if sTempType == "F" else "Fahrenheit"} equivalent is: "
+              f"{(5.0 / 9) * (nTemperature - 32) if sTempType == "F" else ((9.0 / 5.0) * nTemperature) + 32:.1f}")  # Output formatted and converted temperature
 
 else:
-    print("Please enter F or C.")  # Exit if invalid string input
+    print("You must enter F or C.")  # Exit if invalid string input
