@@ -10,19 +10,19 @@ iTest2 = int(input("Test 2: "))
 if iTest2 < iLowestGrade: iLowestGrade = iTest2  # Compare the new input to the lowest recorded grade and change it if true.
 
 iTest3 = int(input("Test 3: "))
-if iTest3 < iLowestGrade: iLowestGrade = iTest3  # Compare the new input to the lowest recorded grade and change it if true.
+if iTest3 < iLowestGrade: iLowestGrade = iTest3
 
 iTest4 = int(input("Test 4: "))
-if iTest4 < iLowestGrade: iLowestGrade = iTest4  # Compare the new input to the lowest recorded grade and change it if true.
+if iTest4 < iLowestGrade: iLowestGrade = iTest4
 
 
-if iTest1 < 0 or iTest2 < 0 or iTest3 < 0 or iTest4 < 0:  # Check if any entered numbers are less than 0.
+if iLowestGrade < 0:  # Check if the lowest grade is less than 0.
     exit(print("Test scores must be greater than 0."))
-
 
 sDropLowest = input("Do you wish to drop the lowest grade? (Y or N): ")
 if sDropLowest != "Y" and sDropLowest != "N":  # Exit the program if the input is invalid.
     exit(print("Enter Y to drop the lowest grade or N to calculate all grades."))
+
 
 # Utilize a shorthand if statement to do the math based on user's input to drop the lowest grade.
 fTestAvg = (iTest1 + iTest2 + iTest3 + iTest4 - iLowestGrade)/3 if sDropLowest == "Y" else (iTest1 + iTest2 + iTest3 + iTest4)/4
